@@ -1,16 +1,19 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "tailwindcss";
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: "./image", // या अपने रिपोजिटरी नाम के अनुसार
+  base: "./image", // अपने रिपोजिटरी नाम के अनुसार बदलें
   plugins: [react()],
   css: {
     postcss: {
-      plugins: [require("tailwindcss"), require("autoprefixer")],
+      plugins: [
+        tailwindcss(), // केवल TailwindCSS
+      ],
     },
   },
   build: {
-    outDir: "dist", // सुनिश्चित करें कि यह Vercel के अनुकूल है
+    outDir: "dist",
+    emptyOutDir: true,
   },
 });
