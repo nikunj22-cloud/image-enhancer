@@ -5,7 +5,7 @@
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "npx vite build",
+  "buildCommand": "vite build --config ./image/vite.config.js",
   "devCommand": "npm run dev",
   "outputDirectory": "dist",
   "cleanUrls": true

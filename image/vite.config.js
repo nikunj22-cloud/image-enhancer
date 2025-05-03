@@ -2,9 +2,12 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  root: "image", // Explicitly set the root directory
+  root: ".", // Ensure the root is set to the current directory
   plugins: [react()],
   css: {
     postcss: "./postcss.config.js",
+  },
+  build: {
+    outDir: "../dist", // Output the build to the correct directory
   },
 });
