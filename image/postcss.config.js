@@ -1,6 +1,6 @@
 export default {
   plugins: {
-    tailwindcss: {}, // Corrected plugin name
+    tailwindcss: {}, // Ensure Tailwind CSS is included
     autoprefixer: {},
   },
 };
