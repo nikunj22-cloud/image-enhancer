@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -11,8 +11,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "vite": "^6.2.6",
     "@vitejs/plugin-react": "^4.0.3",
-    "postcss": "^8.4.24"
+    "postcss": "^8.4.24",
+    "vite": "^6.3.4"
   }
 }

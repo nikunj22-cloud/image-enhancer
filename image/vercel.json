@@ -5,7 +5,7 @@
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "npm install -g vite && npx vite build",
-  "devCommand": "npx vite",
+  "buildCommand": "npm install && npm run build",
+  "devCommand": "npm run dev",
   "outputDirectory": "dist"
 }
